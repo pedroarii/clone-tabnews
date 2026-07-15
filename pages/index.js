@@ -109,6 +109,10 @@ export default function Home() {
             <li>👤 Pedro</li>
             <li>❤️ Isadora</li>
           </ul>
+          <ul>
+            <li>👤 Texaco </li>
+            <li>❤️ Larissa </li>
+          </ul>
 
           <button
             onClick={() => alert("Partiu Chapada!! 🏕️")}
