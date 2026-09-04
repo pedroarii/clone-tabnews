@@ -4,7 +4,9 @@
   "description": "Full-stack web application built from scratch following curso.dev by Felipe Deschamps. A TabNews clone covering the entire development lifecycle — from architecture decisions to deployment.",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "lint:check": "prettier --check .",
+    "lint:fix": "prettier --write ."
   },
   "author": "",
   "license": "MIT",
@@ -12,5 +14,8 @@
     "next": "^13.1.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.6"
   }
 }
