@@ -4,7 +4,10 @@
   "description": "Full-stack web application built from scratch following curso.dev by Felipe Deschamps. A TabNews clone covering the entire development lifecycle — from architecture decisions to deployment.",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run services:up && next dev",
+    "services:up": "docker compose -f infra/compose.yaml up -d",
+    "services:stop": "docker compose -f infra/compose.yaml stop",
+    "services:down": "docker compose -f infra/compose.yaml down",
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write .",
     "test": "jest",
